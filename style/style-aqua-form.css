@@ -1,0 +1,37 @@
+.wrapper{
+    outline: 1px solid black;
+    /* background: greenyellow; */
+    width: 1400px;
+    height: 670px;
+    margin: 0 auto;
+    display: flex;
+}
+
+    .left{
+        outline: 1px solid black;
+        background: greenyellow;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .left-text{
+            font-size: 50px;
+            line-height: 80px            
+        }
+
+    .right{
+        outline: 1px solid black;
+        /* background: blue; */
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+        .right-forma{
+            background: blue;
+            margin-left: 60px;
+            width: 280px;
+            height: 570px;  
+        }

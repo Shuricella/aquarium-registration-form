@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style-online_store.css">
+
+    <link rel="stylesheet" href="styles/style-boot_project.css">
+    
+    <link rel="stylesheet" href="styles/style-card.css">
+
+    <link rel="stylesheet" href="styles/pagination_style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style_filters_list.css">
+    <link rel="stylesheet" href="styles/style-slider.css">
+
+    <link rel="stylesheet" href="styles/style_button_clear_filters.css">
+
+    <link rel="stylesheet" href="styles/style-search-component.css">
+
+    <link rel="stylesheet" href="styles/style-header-component.css">
+
+    <title>Online Store</title>
+</head>
+<body>
+  <main class="wrapper">
+
+    <div class="wrapper-wrapper">
+
+        <div class="header">
+            <!-- Header -->
+
+            <main class="wrapper-header-component">
+
+              <div class="header-text-online-store">Online Store</div>
+      
+              <div class="header-cart button-header-cart-bloc">
+                  <div class="header-cart-bloc">
+                      <div class="header-cart-bloc-resicle"><i class="bi bi-cart"></i></div>
+                      <div class="header-cart-bloc-text">CART</div>
+                  </div>
+              </div>
+      
+            </main>
+            
+        </div>
+
+        <div class="frame">
+
+            <aside class="frame-products">
+                <!-- Products (filters list) -->
+                <div class="products">
+
+                      <main>
+                        <div class="wrapper-filters-list">
+                    
+                    
+                          <div class="block-slider">
+                    
+                            <div class="block-slider-text">Prise</div>
+                    
+                            <div class="wrapper-slider">
+                              
+                              <input type="range" class="form-range-slider" min="0" max="85000"  step="1000" id="customRange1">
+                              <div class="block-slider-cena">
+                                <div class="cena-slider"><div class="number-slider">0 UAH</div></div>
+                                <div class="cena-slider mix-slider"><div class="number-slider">85000 UAH</div></div>
+                              </div>
+                              
+                            </div>
+                    
+                          </div>
+                    
+                    
+                          <div class="category-filters-list">
+                    
+                            <div class="block-category-brand">Category</div>
+                    
+                            <form action="#">
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-monitors" class="cursor-filter-list" name="category" value="Monitors">
+                                <label for="blocks-category-monitors" class="cursor-filter-list none-style-filters text-color-filters">Monitors</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-laptops" class="cursor-filter-list" name="category" value="LapTops">
+                                <label for="blocks-category-laptops" class="cursor-filter-list none-style-filters text-color-filters">LapTops</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-video-cards" class="cursor-filter-list" name="category" value="Video cards">
+                                <label for="blocks-category-video-cards" class="cursor-filter-list none-style-filters text-color-filters">Video cards</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-gaming-keyboards" class="cursor-filter-list" name="category" value="Gaming keyboards">
+                                <label for="blocks-category-gaming-keyboards" class="cursor-filter-list none-style-filters text-color-filters">Gaming keyboards</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-computer-mouse" class="cursor-filter-list" name="category" value="Computer mouse">
+                                <label for="blocks-category-computer-mouse" class="cursor-filter-list none-style-filters text-color-filters">Computer mouse</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-ssd" class="cursor-filter-list" name="category" value="SSD">
+                                <label for="blocks-category-ssd" class="cursor-filter-list none-style-filters text-color-filters">SSD</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-sound-cards" class="cursor-filter-list" name="category" value="Sound cards">
+                                <label for="blocks-category-sound-cards" class="cursor-filter-list none-style-filters text-color-filters">Sound cards</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-category-ram" class="cursor-filter-list" name="category" value="RAM">
+                                <label for="blocks-category-ram" class="cursor-filter-list none-style-filters text-color-filters">RAM</label>
+                              </div>
+                    
+                            </form>
+                          </div>
+                    
+                    
+                          <div class="brand">
+                    
+                            <div class="block-category-brand strip">Brand</div>
+                    
+                            <form action="#">
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-asus" class="cursor-filter-list" name="brand" value="Asus">
+                                <label for="blocks-brand-asus" class="cursor-filter-list none-style-filters text-color-filters">Asus</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-acer" class="cursor-filter-list" name="brand" value="Acer">
+                                <label for="blocks-brand-acer" class="cursor-filter-list none-style-filters text-color-filters">Acer</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-apple" class="cursor-filter-list" name="brand" value="Apple">
+                                <label for="blocks-brand-apple" class="cursor-filter-list none-style-filters text-color-filters">Apple</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-dell" class="cursor-filter-list" name="brand" value="Dell">
+                                <label for="blocks-brand-dell" class="cursor-filter-list none-style-filters text-color-filters">Dell</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-dynamode" class="cursor-filter-list" name="brand" value="Dynamode">
+                                <label for="blocks-brand-dynamode" class="cursor-filter-list none-style-filters text-color-filters">Dynamode</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-gigabyte" class="cursor-filter-list" name="brand" value="Gigabyte">
+                                <label for="blocks-brand-gigabyte" class="cursor-filter-list none-style-filters text-color-filters">Gigabyte</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-kingston" class="cursor-filter-list" name="brand" value="Kingston">
+                                <label for="blocks-brand-kingston" class="cursor-filter-list none-style-filters text-color-filters">Kingston</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-lenovo" class="cursor-filter-list" name="brand" value="Lenovo">
+                                <label for="blocks-brand-lenovo" class="cursor-filter-list none-style-filters text-color-filters">Lenovo</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-logitech" class="cursor-filter-list" name="brand" value="Logitech">
+                                <label for="blocks-brand-logitech" class="cursor-filter-list none-style-filters text-color-filters">Logitech</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-msi" class="cursor-filter-list" name="brand" value="MSI">
+                                <label for="blocks-brand-msi" class="cursor-filter-list none-style-filters text-color-filters">MSI</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-benq" class="cursor-filter-list" name="brand" value="BenQ">
+                                <label for="blocks-brand-benq" class="cursor-filter-list none-style-filters text-color-filters">BenQ</label>
+                              </div>
+                    
+                              <div class="blocks-cat-br">
+                                <input type="checkbox" id="blocks-brand-a4tech" class="cursor-filter-list" name="brand" value="A4Tech">
+                                <label for="blocks-brand-a4tech" class="cursor-filter-list none-style-filters text-color-filters">A4Tech</label>
+                              </div>
+                    
+                            </form>
+                    
+                            <div class="block-line"></div>
+                    
+                          </div>
+                    
+                    
+                          <div class="block-slider-rating">
+                    
+                            <div class="block-slider-text">Rating</div>
+                    
+                            <div class="wrapper-slider">
+                              
+                              <input type="range" class="form-range-slider" min="0" max="5"  step="1" id="customRange1">
+                    
+                            <div class="block-slider-cena">
+                                <div class="cena-slider-rating"><div class="number-slider">0</div></div>
+                                <div class="cena-slider-rating"><div class="number-slider">5</div></div>
+                            </div>
+                    
+                            </div>
+                    
+                          </div>
+                    
+                    
+                        </div>
+                      </main>
+
+                      <!-- Button CLEAR ALL FILTERS -->
+                      <div class="butto-clear butto-clear-knop">
+                        <div class="butto-clear-text">CLEAR ALL FILTERS</div>
+                      </div>
+                </div>
+            </aside>
+
+            <div class="frame-combo">
+
+                <div class="frame-combo-search">
+                    <!-- Searc -->
+
+                    <main class="wrapper-search-component">
+
+                      <nav class="search-text">
+                          <input type="text" class="line-search" placeholder="Search">
+                      </nav>
+              
+                      <div class="search-icon">
+                          <!-- <i class="bi bi-search"></i> -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                      </div>
+                      
+                  </main>
+                  
+                </div>
+
+                <div class="frame-combo-cardlist">
+                    <!-- Cards List -->
+                    <div class="container pt-4 pb-4">
+
+                        <div class="row gy-4 justify-content-flex-start justify-content-sm-flex-start ">
+                            
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                                <!-- Card_1_!!! -->
+                                <div class="setka">
+                                    <div class="blok-rama">
+
+                                        <div class="blok-img">
+                                          <div class="bloc-img-real">
+                                            <img class="otstup" src="https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg" alt="">
+                                          </div>
+                                        </div>
+                                    
+                                        <div class="blok-zv-cn">
+                                        <div class="blok-zvezda">
+                                        <div class="corect1">2.89</div>
+                                        <div class="corect1"><i class="bi bi-star"></i></div>
+                                    
+                                        </div>
+                                        <div class="blok-cena">15999</div>
+                                        </div>
+                                    
+                                        <div class="blok-naz">
+                                        <div class="corect3">Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black</div>
+                                        </div>
+                                    
+                                        <div class="typ">
+                                        <div class="corect4">laptops</div>
+                                        </div>
+                                    
+                                        <div class="blok-add knop">
+                                        <div class="corect5">Add To Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                                <!-- Card_2_!!! -->
+                                <div class="setka">
+                                    <div class="blok-rama">
+
+                                        <div class="blok-img">
+                                          <div class="bloc-img-real">
+                                            <img class="otstup" src="https://content1.rozetka.com.ua/goods/images/big_tile/25101152.jpg" alt="">
+                                          </div>
+                                        </div>
+                                                                            
+                                        <div class="blok-zv-cn">
+                                        <div class="blok-zvezda">
+                                        <div class="corect1">0.53</div>
+                                        <div class="corect1"><i class="bi bi-star"></i></div>
+                                    
+                                        </div>
+                                        <div class="blok-cena">28999</div>
+                                        </div>
+                                    
+                                        <div class="blok-naz">
+                                        <div class="corect3">Ноутбук Acer Nitro 5 AN515-55-56WH (NH.Q7PEU.00L) Obsidian Black Суперцена!!!</div>
+                                        </div>
+                                    
+                                        <div class="typ">
+                                        <div class="corect4">laptops</div>
+                                        </div>
+                                    
+                                        <div class="blok-add knop">
+                                        <div class="corect5">Add To Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                                <!-- Card_3_!!! -->
+                                <div class="setka">
+                                    <div class="blok-rama">
+
+                                        <div class="blok-img">
+                                          <div class="bloc-img-real">
+                                            <img class="otstup" src="https://content.rozetka.com.ua/goods/images/big_tile/27122440.jpg" alt="">
+                                          </div>
+                                        </div>
+                                                                            
+                                        <div class="blok-zv-cn">
+                                        <div class="blok-zvezda">
+                                        <div class="corect1">2.2</div>
+                                        <div class="corect1"><i class="bi bi-star"></i></div>
+                                    
+                                        </div>
+                                        <div class="blok-cena">25500</div>
+                                        </div>
+                                    
+                                        <div class="blok-naz">
+                                        <div class="corect3">Ноутбук Asus ROG Strix G15 G512LI-HN058 (90NR0381-M01630) Black</div>
+                                        </div>
+                                    
+                                        <div class="typ">
+                                        <div class="corect4">laptops</div>
+                                        </div>
+                                    
+                                        <div class="blok-add knop">
+                                        <div class="corect5">Add To Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                              <!-- Card_4_!!! -->
+                              <div class="setka">
+                                  <div class="blok-rama">
+
+                                      <div class="blok-img">
+                                        <div class="bloc-img-real">
+                                          <img class="otstup" src="https://content1.rozetka.com.ua/goods/images/big_tile/191836868.jpg" alt="">
+                                        </div>
+                                      </div>
+                                                                        
+                                      <div class="blok-zv-cn">
+                                      <div class="blok-zvezda">
+                                      <div class="corect1">3.83</div>
+                                      <div class="corect1"><i class="bi bi-star"></i></div>
+                                  
+                                      </div>
+                                      <div class="blok-cena">22000</div>
+                                      </div>
+                                  
+                                      <div class="blok-naz">
+                                      <div class="corect3">Ноутбук Asus VivoBook 15 X513EA-BQ409 (90NB0SG4-M05090) Black</div>
+                                      </div>
+                                  
+                                      <div class="typ">
+                                      <div class="corect4">laptops</div>
+                                      </div>
+                                  
+                                      <div class="blok-add knop">
+                                      <div class="corect5">Add To Cart</div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                              <!-- Card_5_!!! -->
+                              <div class="setka">
+                                  <div class="blok-rama">
+
+                                      <div class="blok-img">
+                                        <div class="bloc-img-real">
+                                          <img class="otstup" src="https://content.rozetka.com.ua/goods/images/big_tile/192276490.jpg" alt="">
+                                        </div>
+                                      </div>
+                                                                        
+                                      <div class="blok-zv-cn">
+                                      <div class="blok-zvezda">
+                                      <div class="corect1">2.97</div>
+                                      <div class="corect1"><i class="bi bi-star"></i></div>
+                                  
+                                      </div>
+                                      <div class="blok-cena">21000</div>
+                                      </div>
+                                  
+                                      <div class="blok-naz">
+                                      <div class="corect3">Ноутбук Asus Laptop M515UA-BQ387 (90NB0U11-M05340) Slate Grey</div>
+                                      </div>
+                                  
+                                      <div class="typ">
+                                      <div class="corect4">laptops</div>
+                                      </div>
+                                  
+                                      <div class="blok-add knop">
+                                      <div class="corect5">Add To Cart</div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                              <!-- Card_6_!!! -->
+                              <div class="setka">
+                                  <div class="blok-rama">
+
+                                      <div class="blok-img">
+                                        <div class="bloc-img-real">
+                                          <img class="otstup" src="https://content1.rozetka.com.ua/goods/images/big_tile/172755042.jpg" alt="">
+                                        </div>
+                                      </div>
+                                                                        
+                                      <div class="blok-zv-cn">
+                                      <div class="blok-zvezda">
+                                      <div class="corect1">2.63</div>
+                                      <div class="corect1"><i class="bi bi-star"></i></div>
+                                  
+                                      </div>
+                                      <div class="blok-cena">27000</div>
+                                      </div>
+                                  
+                                      <div class="blok-naz">
+                                      <div class="corect3">Ноутбук Asus ZenBook UX425EA-BM295 (90NB0SM1-M07340) Pine Grey + фирменный чехол</div>
+                                      </div>
+                                  
+                                      <div class="typ">
+                                      <div class="corect4">laptops</div>
+                                      </div>
+                                  
+                                      <div class="blok-add knop">
+                                      <div class="corect5">Add To Cart</div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                                <!-- Card_7_!!! -->
+                                <div class="setka">
+                                    <div class="blok-rama">
+
+                                        <div class="blok-img">
+                                          <div class="bloc-img-real">
+                                            <img class="otstup" src="https://content1.rozetka.com.ua/goods/images/big_tile/180781181.jpg" alt="">
+                                          </div>
+                                        </div>
+                                                                            
+                                        <div class="blok-zv-cn">
+                                        <div class="blok-zvezda">
+                                        <div class="corect1">2.65</div>
+                                        <div class="corect1"><i class="bi bi-star"></i></div>
+                                    
+                                        </div>
+                                        <div class="blok-cena">36500</div>
+                                        </div>
+                                    
+                                        <div class="blok-naz">
+                                        <div class="corect3">Ноутбук Asus ROG Strix G15 G513QE-HN029 (90NR05I2-M00950) Eclipse Gray</div>
+                                        </div>
+                                    
+                                        <div class="typ">
+                                        <div class="corect4">laptops</div>
+                                        </div>
+                                    
+                                        <div class="blok-add knop">
+                                        <div class="corect5">Add To Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                              <!-- Card_8_!!! -->
+                              <div class="setka">
+                                  <div class="blok-rama">
+
+                                      <div class="blok-img">
+                                        <div class="bloc-img-real">
+                                          <img class="otstup" src="https://content2.rozetka.com.ua/goods/images/big_tile/163134380.jpg" alt="">
+                                        </div>
+                                      </div>
+                                                                        
+                                      <div class="blok-zv-cn">
+                                      <div class="blok-zvezda">
+                                      <div class="corect1">4.93</div>
+                                      <div class="corect1"><i class="bi bi-star"></i></div>
+                                  
+                                      </div>
+                                      <div class="blok-cena">25999</div>
+                                      </div>
+                                  
+                                      <div class="blok-naz">
+                                      <div class="corect3">Ноутбук Dell Vostro 14 3400 (N4011VN3400EMEA01_i5XeW) Accent Black</div>
+                                      </div>
+                                  
+                                      <div class="typ">
+                                      <div class="corect4">laptops</div>
+                                      </div>
+                                  
+                                      <div class="blok-add knop">
+                                      <div class="corect5">Add To Cart</div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="setka col-6 col-sm-6 col-xl-6 col-xxl-4 ">
+                                <!-- Card_9_!!! -->
+                                <div class="setka">
+                                    <div class="blok-rama">
+
+                                        <div class="blok-img">
+                                          <div class="bloc-img-real">
+                                            <img class="otstup" src="https://content1.rozetka.com.ua/goods/images/big_tile/186616819.jpg" alt="">
+                                          </div>
+                                        </div>
+                                                                            
+                                        <div class="blok-zv-cn">
+                                        <div class="blok-zvezda">
+                                        <div class="corect1">3.85</div>
+                                        <div class="corect1"><i class="bi bi-star"></i></div>
+                                    
+                                        </div>
+                                        <div class="blok-cena">12500</div>
+                                        </div>
+                                    
+                                        <div class="blok-naz">
+                                        <div class="corect3">Ноутбук Lenovo IdeaPad 3 15IGL05 (81WQ000PRA) Business Black</div>
+                                        </div>
+                                    
+                                        <div class="typ">
+                                        <div class="corect4">laptops</div>
+                                        </div>
+                                    
+                                        <div class="blok-add knop">
+                                        <div class="corect5">Add To Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <nav class="frame-combo-pagination">
+                    <!-- Pagination -->
+                    <div class="osnova">
+                        <nav class="ramka">
+                  
+                          <a href="#" class="krug krug-left" data-element="nav-prev">
+                            <i class="bi bi-chevron-left"></i>
+                          </a>
+                  
+                          <ul class="page-list non-styles" data-element="pagination">
+                  
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles active"  data-page-index="0">1</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="1">2</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="2">3</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="3">4</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="4">5</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="5">6</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="6">7</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="7">8</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="8">9</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="9">10</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="10">11</a>
+                            </li>
+                            <li>
+                              <a href="#" data-element="page-link" class="krug non-styles"  data-page-index="11">12</a>
+                            </li>
+                  
+                          </ul>
+                  
+                          <a href="#" class="krug krug-right" data-element="nav-next">
+                            <i class="bi bi-chevron-right"></i>
+                          </a>
+                  
+                        </nav>
+                      </div>
+
+                </nav>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+  </main>
+</body>
+</html>
