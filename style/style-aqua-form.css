@@ -1,6 +1,8 @@
 :root {
     --color-text-title: #FFFFFF;
     --color-text-text: #000000;
+    --color-button-proceed: #FF0000;
+    --color-button-facebook: #7B68EE;
 }
 
 body {
@@ -68,6 +70,101 @@ body {
             text-align: center;
             font-size: 17px;
             line-height: 1.2;
+            color: var(--color-text-text);
         }
+
+        .right-text-name {
+            margin: 10px 0px 3px 10px;
+            font-size: 15px;
+            color: var(--color-text-text);
+        }
+
+        .right-data {
+            width: 280px;
+            height: 45px;
+            border-radius: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        .button-size {
+            width: 280px;
+            height: 45px;
+            border-radius: 20px;
+        }
+
+        .button-proceed {
+            
+            background-color: var(--color-button-proceed);
+            
+            color: var(--color-text-title);
+        }
+
+        .text-or {
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .button-facebook {
+            display: flex;
+            background-color: var(--color-button-facebook);
+            line-height: 1.0;
+            color: var(--color-text-title);
+        }
+
+            .button-size svg {
+                fill: var(--color-text-title);
+            }
+
+            .button-facebook-lable {
+                margin-left: 12px;
+                margin-top: 2px;
+            }
+
+            .button-facebook-text {
+                margin-left: 35px;
+                margin-top: 3px;
+            }
+
+        .button-google {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            background-color: var(--color-text-title);
+        }
+
+            .button-google-lable {
+                margin-left: 12px;
+            }
+
+            .button-google-text {
+                margin-left: 20px;
+            }
+
+        .agreement {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.3;
+        }
+
+            .agreement-text {
+                font-weight: 700;
+            }
+
+        .account-login {
+            display: flex;
+            font-weight: 700;
+        }
+
+            .account-login-enter {
+                margin-left: 8px;
+                font-weight: 700;
+                font-weight: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
 
 
