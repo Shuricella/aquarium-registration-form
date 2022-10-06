@@ -1,8 +1,12 @@
 :root {
     --color-text-title: #FFFFFF;
     --color-text-text: #000000;
+    --color-right-box: #F0FFFF;
     --color-button-proceed: #FF0000;
+    --color-button-proceedhov: #FFA07A;
     --color-button-facebook: #7B68EE;
+    --color-button-facebookhov: #483D8B;
+    --color-button-googlehov: #C0C0C0;
 }
 
 body {
@@ -11,49 +15,51 @@ body {
 
 .list-none {
     list-style: none;
+    padding-left: 0;
 }
 
 .wrapper{
-    /* outline: 1px solid black; */
-    /* background: greenyellow; */
+    margin: 0 auto;
+    margin-top: 10px;
     width: 1400px;
     height: 870px;
-    margin: 0 auto;
     display: flex;
 }
 
     .left{
-        outline: 1px solid black;
-        background: greenyellow;
-        width: 60%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        width: 60%;
+        height: 100%;
     }
         .left-text{
             text-align: center;
-            font-size: 50px;
-            line-height: 1.5;
+            font-size: 60px;
+            line-height: 1.8;
+            letter-spacing: 3px;
             color:var(--color-text-title);
             font-weight: 700;
+            text-shadow: 5px 3px 7px black;
         }
 
     .right{
-        outline: 1px solid black;
-        /* background: blue; */
-        width: 40%;
-        height: 100%;
         display: flex;
         align-items: center;
+
+        width: 40%;
+        height: 100%;
     }
         .right-forma{
-            /* background: blue; */
-            outline: 1px solid black;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            outline: 1px solid black;
+            border-radius: 30px;
+            background-color: var(--color-right-box);
             margin-left: 60px;
             width: 380px;
             height: 800px;  
@@ -94,10 +100,13 @@ body {
         }
 
         .button-proceed {
-            
             background-color: var(--color-button-proceed);
-            
             color: var(--color-text-title);
+        }
+        .button-proceed:focus,
+        .button-proceed:hover {
+            background-color: var(--color-button-proceedhov);
+            color: var(--color-text-text);
         }
 
         .text-or {
@@ -110,6 +119,7 @@ body {
 
         .button-facebook {
             display: flex;
+
             background-color: var(--color-button-facebook);
             line-height: 1.0;
             color: var(--color-text-title);
@@ -128,10 +138,16 @@ body {
                 margin-left: 35px;
                 margin-top: 3px;
             }
+        .button-facebook:focus,
+        .button-facebook:hover {
+            background-color: var(--color-button-facebookhov);
+            color: var(--color-text-text);
+        }
 
         .button-google {
             display: flex;
             align-items: center;
+            
             margin-top: 15px;
             background-color: var(--color-text-title);
         }
@@ -143,6 +159,11 @@ body {
             .button-google-text {
                 margin-left: 20px;
             }
+        .button-google:focus,
+        .button-google:hover {
+            background-color: var(--color-button-googlehov);
+            color: var(--color-text-title);
+        }
 
         .agreement {
             text-align: center;
@@ -157,8 +178,11 @@ body {
         .account-login {
             display: flex;
             font-weight: 700;
+            
         }
-
+            .account-login-none {
+                margin: 0;
+            }
             .account-login-enter {
                 margin-left: 8px;
                 font-weight: 700;
